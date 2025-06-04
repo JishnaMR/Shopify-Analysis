@@ -22,9 +22,16 @@ The goal of this project is to analyze Shopify sales data in Power BI to uncover
 
 1. Transactions Performance
 This section focuses on evaluating the overall health and effectiveness of sales operations by tracking:
-       1.Net Sales : Total revenue generated before tax.
-                      Following DAX expression was written to find Net sale.
+
+    1.Net Sales : Total revenue generated before tax.
+                      Following DAX expression was written to find Net sale:
+
+                          Net Sales = SUM(shopify_data[Subtotal Price])
                            
-                 Total Quantity      : The cumulative number of products sold.
-                 Net Avg Order Value : The average revenue per transaction, excluding tax.
+   2.Total Quantity : The cumulative number of products sold.
+                      Following DAX expression was written to find Net sale:
+
+                               
+                 Net Avg Order Value : The average revenue per transaction, excluding tax:
+                         
    
