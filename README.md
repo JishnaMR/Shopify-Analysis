@@ -44,7 +44,7 @@ Understanding how customers interact with the business is critical.
 
                          Total Customers = DISTINCTCOUNT(shopify_data[customer Id])
    
-     2.2. Single Order Customers: Customers who placed only one order.
+   2.2. Single Order Customers: Customers who placed only one order.
                                Following DAX expression was written to find Single Order Customers:
 
                                Single Order Customers = CALCULATE(COUNTROWS(VALUES(shopify_data[Customer Id])),
@@ -52,7 +52,7 @@ Understanding how customers interact with the business is critical.
                                        CALCULATE(DISTINCTCOUNT(shopify_data[order Number])) = 1
                                    ))
 
-      2.3. Repeat Customers: Customers with more than one order, indicating loyalty.
+   2.3. Repeat Customers: Customers with more than one order, indicating loyalty.
                         Following DAX expression was written to find Repeat Customers:
 
                          
