@@ -82,6 +82,76 @@ To evaluate long-term growth and customer value, this section includes:
 
 ####2.Charts Requirements
 
+This section will support dynamic analysis using a measure selector for: Net Sales, Total Quantity, Total Customers, Repeat Customers
+     
+1.1.  Filled Map (Province-Level):
+           
+  Purpose: Display province-wise performance using color saturation based on the selected measure.
+
+  Interactivity: Changes dynamically with the measure selector.
+
+  1.2. Bubble Map / Density Map (City Level):
+
+  Purpose: Visually represent sales or customer density at a more granular level.
+
+  Bubble Size or Heat Intensity: Driven by the selected measure.
+
+  Tooltip: Shows all key metrics (Net Sales, Quantity, Total Customers, Repeat Customers).
+
+   1.3. Bar Chart (City-Level Performance):
+
+  Purpose : Compare top-performing cities based on the selected KPI.
+  
+  Sorted  : Descending order by selected measure.
+  
+  Dynamic : Interacts with slicers/filters and responds to the KPI selector.
+
+2. Sales Trend Over Time
+
+   2.1. Area Chart – Trend by Day
+
+   Purpose: Show the daily trend of the selected measure (e.g., daily Net Sales or daily Repeat Customers).
+
+   Interactivity: Changes dynamically based on the selected measure.
+
+   2.2. Bar Chart or Line Chart – Trend by Hour
+
+   Purpose: Display sales or customer activity by hour of the day (e.g., 0–23 hrs), revealing peak activity periods.
+
+   Use Case: Helps understand time-of-day behavior, useful for marketing or operational timing decisions.
+
+3. Gateway Payment Method
+
+   -> Identify the most and least used payment methods.
+
+   -> Detect customer preferences across regions or campaigns.
+
+4. Product Type
+
+   ->Determine which product types generate the highest revenue and order volume.
+
+   ->Understand how customer engagement varies across different product categories.
+
+
+Charts Requirements:
+
+->Provide a dedicated page to display transaction-level or detailed data.
+
+-> Allow users to drill through from summary visuals (like charts and KPIs) to see underlying records.
+
+-> Enable users to explore data at a granular level, such as individual orders, customers, or product types.
+
+-> Help explain summary trends and validate aggregated metrics with raw data.
+
+
+
+
+
+
+
+
+
+
     
 
 
