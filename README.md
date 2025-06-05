@@ -23,15 +23,49 @@ The goal of this project is to analyze Shopify sales data in Power BI to uncover
 1. Transactions Performance
 This section focuses on evaluating the overall health and effectiveness of sales operations by tracking:
 
-    1.Net Sales : Total revenue generated before tax.
+    1.1 Net Sales : Total revenue generated before tax.
                       Following DAX expression was written to find Net sale:
 
                           Net Sales = SUM(shopify_data[Subtotal Price])
                            
-   2.Total Quantity : The cumulative number of products sold.
-                      Following DAX expression was written to find Net sale:
+   1.2 Total Quantity : The cumulative number of products sold.
+                      Following DAX expression was written to find Total Quantity:
+
+                        Total Quantity = SUM(shopify_data[Quantity])
+   1.3 Net Avg Order Value: The average revenue per transaction, excluding tax.
+                           Following DAX expression was written to find Net sale:
+
+                        Net Avg Order Value = AVERAGE(shopify_data[Subtotal Price])
+2.Customer Purchase Behavior
+
+Understanding how customers interact with the business is critical.
+    2.1 Total Customers: The count of unique buyers.
+                         Following DAX expression was written to find Total Customers:
+
+                         Total Customers = DISTINCTCOUNT(shopify_data[customer Id])
+   2.2 Single Order Customers: Customers who placed only one order.
+                               Following DAX expression was written to find Single Order Customers:
+
+                               Single Order Customers = CALCULATE(COUNTROWS(VALUES(shopify_data[Customer Id])),
+                                   FILTER(VALUES(shopify_data[Customer Id]),
+                                       CALCULATE(DISTINCTCOUNT(shopify_data[order Number])) = 1
+                                   ))
+
+   2.3 Repeat Customers: Customers with more than one order, indicating loyalty.
+                        Following DAX expression was written to find Repeat Customers:
+
+                         
+                             Repeat Customers = CALCULATE(COUNTROWS(VALUES(shopify_data[Customer Id])),
+                                                   FILTER(VALUES(shopify_data[Customer Id]),
+                                                       CALCULATE(DISTINCTCOUNT(shopify_data[order Number])) > 1
+                                                    ))
+
+
+
+
+
+
 
                                
-                 Net Avg Order Value : The average revenue per transaction, excluding tax:
-                         
+                 
    
