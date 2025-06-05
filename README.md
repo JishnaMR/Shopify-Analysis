@@ -20,7 +20,7 @@ The goal of this project is to analyze Shopify sales data in Power BI to uncover
 
 ### KPI’s Requirements
 
-###1. Transactions Performance:
+### 1. Transactions Performance:
 This section focuses on evaluating the overall health and effectiveness of sales operations by tracking:
 
 1.1. Net Sales : Total revenue generated before tax.
@@ -80,11 +80,12 @@ To evaluate long-term growth and customer value, this section includes:
                      Purchase Frequency = DISTINCTCOUNT(shopify_data[order number]) / [Total Customers]
 
 
-####2.Charts Requirements
+#### 2.Charts Requirements
 
 This section will support dynamic analysis using a measure selector for: Net Sales, Total Quantity, Total Customers, Repeat Customers
-     
-1.1.  Filled Map (Province-Level):
+1. Regional Overview - Province and Cities
+   
+  1.1.  Filled Map (Province-Level):
            
   Purpose: Display province-wise performance using color saturation based on the selected measure.
 
