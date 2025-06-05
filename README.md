@@ -80,9 +80,10 @@ To evaluate long-term growth and customer value, this section includes:
                      Purchase Frequency = DISTINCTCOUNT(shopify_data[order number]) / [Total Customers]
 
 
-#### 2.Charts Requirements
+### Charts Requirements
 
 This section will support dynamic analysis using a measure selector for: Net Sales, Total Quantity, Total Customers, Repeat Customers
+
 1. Regional Overview - Province and Cities
    
   1.1.  Filled Map (Province-Level):
