@@ -1,4 +1,4 @@
-# Shopify-Analysis
+# Shopify-Analysis_Real Time Powerbi Project
 
 ## Problem Statement
 
@@ -21,6 +21,11 @@ The goal of this project is to analyze Shopify sales data in Power BI to uncover
 ## Sopify raw data:
 
   # [shopify_data](https://github.com/JishnaMR/Shopify-Analysis/blob/main/Shopify%20raw%20data)
+
+## Dashboard:
+
+   # [dashboard]{https://github.com/JishnaMR/Shopify-Analysis/blob/main/Screenshot%202025-06-06%20155738.png}
+  
 
 ### KPI’s Requirements
 
