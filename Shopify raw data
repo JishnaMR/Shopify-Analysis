@@ -1,8 +1,7 @@
-Sopify raw data:
+Sopify raw data:   https://docs.google.com/spreadsheets/d/1GeIgZ9hepgFbj4A9y8Szp9CwUPBc6RZx/edit?usp=drive_link&ouid=110837633162855420612&rtpof=true&sd=true
         
-         # [Shopify_data](https://docs.google.com/spreadsheets/d/1GeIgZ9hepgFbj4A9y8Szp9CwUPBc6RZx/edit?usp=drive_link&ouid=110837633162855420612&rtpof=true&sd=true)
-
-# TERMINOLOGY DOCUMENT
+        
+TERMINOLOGY DOCUMENT
 
 1. Admin GraphQL API ID:
         A globally unique identifier used by systems that support GraphQL APIs. This ID allows precise querying of specific records (like an order or product) within a backend system. It's generally not human-readable and is used programmatically.
