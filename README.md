@@ -18,6 +18,10 @@ The goal of this project is to analyze Shopify sales data in Power BI to uncover
 - Step 10 : Dashboard / Report Development
 - Step 11 : Insights Generation
 
+## Sopify raw data:
+
+  # [shopify_data](https://github.com/JishnaMR/Shopify-Analysis/blob/main/Shopify%20raw%20data)
+
 ### KPI’s Requirements
 
 ### 1. Transactions Performance:
